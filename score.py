@@ -95,9 +95,9 @@ def get_score(transformer_model,tokenizer,NN_model,text):
 # Example usage:
 # Take a single example from your test set
 
-tokenizer = AutoTokenizer.from_pretrained("Clickbait1",is_split_into_words=True)
+tokenizer = AutoTokenizer.from_pretrained("ClickbaitModel",is_split_into_words=True)
 model = AutoModel.from_pretrained(
-    "Clickbait1", output_hidden_states=True,output_attentions=True
+    "ClickbaitModel", output_hidden_states=True,output_attentions=True
 )
 
 # NN_model = tf.keras.models.load_model('D:\\Tech\\MachineLearning\\ClickBaitHighlighter\\models\\NN_truth_mean.keras')
