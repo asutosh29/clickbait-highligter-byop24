@@ -10,4 +10,3 @@ NN_latest_2.keras
 NN_latest.keras
 NN_model.keras
 NN_truth_mean.keras
-sgd_regressor.pkl
