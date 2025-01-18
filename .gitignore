@@ -1,0 +1,13 @@
+.ipynb_checkpoints/
+__pycache__/
+clickbait/
+Clickbait1/
+env/
+env2/
+
+checkpoints.weights.h5
+NN_latest_2.keras
+NN_latest.keras
+NN_model.keras
+NN_truth_mean.keras
+sgd_regressor.pkl

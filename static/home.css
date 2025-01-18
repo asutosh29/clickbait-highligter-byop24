@@ -1,0 +1,150 @@
+:root {
+    --blue: hsl(233, 100%, 18%);
+    --white: #ffffff;
+    --black: hsl(233, 100%, 5%);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+
+}
+
+p{
+    text-align: justify;
+}
+
+.my-navbar {
+    padding: 0em;   
+    font-size: 2em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+    height: 10vh;
+}
+.highlight {
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0 9px;
+    background-color: blue;
+    color: var(--white);
+}
+.highlight-2{
+    background-color: green;
+}
+.highlight-1{
+    background-color: red;
+}
+
+.card{
+    width: 600px;
+}
+.parent {
+    position: relative;
+}
+
+.underline::after {
+    position: absolute;
+    content: "";
+    background-color: var(--white);
+    height: 1.5px;
+    width: 45%;
+    bottom: -2px;
+    left: 0;
+    transition: width 1s;
+
+}
+
+.underline:hover::after {
+    width: 100%;
+}
+
+
+.my-container {
+    padding: 1em 15em;
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    background: linear-gradient(var(--black),var(--black));
+    height: 80vh;
+}
+.row{
+    display: flex;
+}
+.col
+{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 1em;
+    height: 70vh;
+    width: 35vw;
+    margin: 1em;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form label{
+    color: var(--black);
+    font-weight: 700;
+    font-size: 2em;
+}
+input{
+    width: 100%;
+    padding: 1em;
+    border-radius: 5px;
+}
+.form >*{
+    margin: 2px;
+}
+.form input{
+    height: 2em;
+}
+
+.result{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.right{
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+h3{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+.result h1{
+    font-size: 6em;
+}
+
+
+.flash_messages p{
+    text-align: center;
+}
+
+.footer {
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 10vh;
+    background: linear-gradient(var(--black),var(--blue));
+    /* background-color: var(--black); */
+    color: lightgray;
+}
