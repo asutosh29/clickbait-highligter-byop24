@@ -7,20 +7,13 @@
 > cd "clickbait-highligter-byop24"
 ```
 ## Make a new environment (Recommended)
-1. virtualenv
+- conda (recommended)
 ```linux
-> virtualenv env
-> env\Scripts\activate
-```
-2. conda (recommended)
-```linux
-> conda create --name myenv python=3.12.8
+> conda create --name myenv --file req.txt python=3.12.8
 > conda activate myenv
 ```
 ## Install the dependencies
-```linux
-> pip install requirements.txt
-```
+
 Also download the following folder from google drive link and put it in a folder named "ClickbaitModel" in the project directory "clickbait-highligter-byop24"
 ```linux
 https://drive.google.com/drive/u/3/folders/1aWeD41L3elXf8jRPyRh3d1g7lRf8_Ggx
