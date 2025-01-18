@@ -44,7 +44,7 @@ def get_embeddings(texts, tokenizer, model, batch_size=16):
             batch_texts,
             padding=True,
             truncation=True,
-            max_length=256,  # Increased max_length
+            max_length=256, # Fine because Data set had very less exmples beyond this
             return_tensors="pt",
         )
         inputs = {k: v.to(device) for k, v in inputs.items()}
