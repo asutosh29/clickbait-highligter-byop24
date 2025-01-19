@@ -32,6 +32,7 @@ def get_score(prompt):
 @app.route('/home',methods=['GET','POST']) 
 def home():  
     score=0 
+    regress_score=0
     top_K_words=[]
     prompt=""
     if 'submit_button' in request.form:
@@ -51,7 +52,7 @@ def home():
         else:   
             flash("Please provide the prompt to check first!","danger")
             return redirect(url_for('home'))
-    return render_template('home.html',score=score, top_K_words=top_K_words, prompt=prompt)
+    return render_template('home.html',score=score, regress_score=regress_score,top_K_words=top_K_words, prompt=prompt)
 
 
     
