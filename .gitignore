@@ -3,6 +3,7 @@ __pycache__/
 clickbait/
 env/
 env2/
+CLickbait1/
 
 checkpoints.weights.h5
 NN_latest_2.keras
